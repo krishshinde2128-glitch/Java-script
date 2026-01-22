@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> what can javascript do?</h2>
+
+    <p id="demo">javascript can change HTML contant.</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+        Click Me!</button>
+    <button type="button"
+        onclick="document.getElementById('demo').style.fontSize = '35px'">
+        Click Me!</button>
+    <button type="button"
+        onclick="document.getElementById('demo').style.display = 'none'">
+        hide!</button>
+    <button type="button"
+        onclick="document.getElementById('demo').style.display = 'block'">
+        show!</button>
+        <br><br><br>
+        <button
+        onclick="document.getElementById('myImage').src='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHc1dzJwZWxxc2dpYWMwYW1lYm0yYW54NGpkNHdqdGJ5a2l0MG9ybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2xWmkSQ7oeZYZ3MRzi/giphy.gif'">
+        Turn ON</button>
+    <br><br><br>
+    <img id="myImage" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHc1dzJwZWxxc2dpYWMwYW1lYm0yYW54NGpkNHdqdGJ5a2l0MG9ybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2xWmkSQ7oeZYZ3MRzi/giphy.gif"
+        width="500" height="500">
+    <br><br>
+    <button
+        onclick="document.getElementById('myImage').src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa28yanAxdjJtdHBkOXhvaHFibXB1OXE3cmluNnhheDAyYjNueHRjdyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/MDJ9IbxxvDUQM/giphy.gif'">
+        Turn OFF</button>
+    <br><br>
+
+</body>
+</html>

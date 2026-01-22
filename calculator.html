@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+</head>
+<body>
+    <h2 style="text-align: center;padding-top: 20px;">JavaScript Calculator</h2>
+    <script>
+        // take imput from user
+        let num1 = parseFloat(prompt("Enter first number: "));
+        let operator = prompt("Enter operator (+, -, *, /): ");
+        let num2 = parseFloat(prompt("Enter second number: "));
+        let result;
+        // perform calculation based on operator
+        if (operator === "+") {
+            result = num1 + num2;
+        } else if (operator === "-") {
+            result = num1 - num2;
+        } else if (operator === "*") {
+            result = num1 * num2;
+        } else if (operator === "/") {
+            result = num1 / num2;
+        } else {
+            result = "Invalid operator";
+        }
+        alert("Result: " + result);
+    </script>
+</body>
+</html>

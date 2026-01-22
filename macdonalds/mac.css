@@ -1,0 +1,19 @@
+body {
+            background-color: red; /* McDonalds Red */
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            margin: auto; /* Centers the box */
+            padding: 20px;
+            border: 5px solid yellow; /* McDonalds Yellow */
+        }
+
+        button {
+            background-color: yellow;
+            font-size: 20px;
+            cursor: pointer;
+        }

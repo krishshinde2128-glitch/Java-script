@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple Calculator</title>
+</head>
+<body center style="text-align: center;">
+    <h2 style="text-align: center;padding-top: 20px;">Simple Calculator</h2>
+    </style>
+    <input type="text" id= "display" disabled>
+    <br><br>
+    <button onclick="pressnumber('1')">1</button>
+    <button onclick="pressnumber('2')">2</button>
+    <button onclick="pressnumber('3')">3</button>
+    <button onclick="setoperator('+')">+</button>
+    <br><br>
+    <button onclick="pressnumber('4')">4</button>
+    <button onclick="pressnumber('5')">5</button>
+    <button onclick="pressnumber('6')">6</button>
+    <button onclick="setoperator('-')">-</button>
+    <br><br>
+    <button onclick="pressnumber('7')">7</button>
+    <button onclick="pressnumber('8')">8</button>
+    <button onclick="pressnumber('9')">9</button>
+    <button onclick="setoperator('*')">*</button>
+    <br><br>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="pressnumber('0')">0</button>
+    <button onclick="calculateResult()">=</button>
+    <button onclick="setoperator('/')">/</button>
+    <script>
+        let firstnum = "";
+        let secondnum = "";
+        let operator = "";
+
+        function pressnumber(num){
+            if(operator === ""){
+                firstnum += num;
+                document.getElementById("display").value = firstnum;
+            } else {
+                secondnum += num;
+                document.getElementById("display").value = secondnum;
+            }
+        }
+        function setoperator(op){
+            operator = op;
+        }
+        function result(){
+            let result;
+            let n1 = parseFloat(firstnum);
+            let n2 = parseFloat(secondnum);
+
+         if (operator === "+") {
+            result = n1 + n2;
+        } else if (operator === "-") {
+            result = n1 - n2;
+        } else if (operator === "*") {
+            result = n1 * n2;
+        } else if (operator === "/") {
+            result = n1 / n2;
+        } else {
+            result = "Invalid operator";
+        }
+        return result;
+        }
+        function calculateResult(){
+            let res = result();
+            document.getElementById("display").value = result();
+        }
+        function clearDisplay(){
+            firstnum = "";
+            secondnum = "";
+            operator = "";
+            document.getElementById("display").value = "";
+        }
+    </script>
+        
+</body>
+</html>
