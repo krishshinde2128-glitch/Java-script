@@ -7,11 +7,11 @@
 <body>
 
     <div class="box">
-        <h1>McDonald's</h1>
-        <p>Pick a meal:</p>
+        <h1>McDonalds</h1>
+        <p>Choose a meal:</p>
 
-        <input type="radio" id="bmac" name="food" value="5">
-        <label>Big Mac (250₹)</label><br><br>
+        <input type="radio" id="wrap" name="food" value="5">
+        <label>Big wrap (250₹)</label><br><br>
 
         <input type="radio" id="nuggets" name="food" value="4">
         <label>McNuggets (200₹)</label><br><br>
@@ -19,8 +19,8 @@
         <input type="radio" id="fries" name="food" value="2">
         <label>Fries (100₹)</label><br><br>
 
-        <input type="radio" id="aloo" name="food" value="2">
-        <label>aloo ticki (190₹)</label><br><br>
+        <input type="radio" id="peri" name="food" value="2">
+        <label>Peri Peri Fries (120₹)</label><br><br>
 
 
         <button onclick="getBill()">Get Bill</button>
@@ -33,8 +33,8 @@
 
             var message = "";
             
-            if (document.getElementById('bmac').checked) {
-                message = "You chose Big Mac. Total: 250₹";
+            if (document.getElementById('wrap').checked) {
+                message = "You chose Big wrap. Total: 250₹";
             } 
             else if (document.getElementById('nuggets').checked) {
                 message = "You chose McNuggets. Total: 200₹";
@@ -42,8 +42,8 @@
             else if (document.getElementById('fries').checked) {
                 message = "You chose Fries. Total: 100₹";
             } 
-            else if (document.getElementById('aloo').checked){
-                message = "you chose aloo ticki. Total: 190₹"
+            else if (document.getElementById('peri').checked) {
+                message = "You chose peri peri frises. Total: 120₹";
             }
             else {
                 message = "Please pick a meal first!";

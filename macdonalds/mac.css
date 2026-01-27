@@ -1,20 +1,24 @@
 body {
-            background-color: red; /* McDonalds Red */
-            font-family: sans-serif;
-            text-align: center;
-        }
+background-color: red; 
+font-family: sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; 
+margin: 0; 
+}
 
-        .box {
-            background-color: white;
-            width: 300px;
-            margin: auto; /* Centers the box */
-            padding: 20px;
-            border: 5px solid yellow; /* McDonalds Yellow */
-        }
+.box {
+background-color: white;
+width: 300px;
+padding: 20px;
+border: 5px solid yellow; 
+text-align: center; 
+}
 
-        button {
-            background-color: yellow;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        
+button {
+background-color: yellow;
+font-size: 20px;
+font-size: 20px;
+cursor: pointer;
+}

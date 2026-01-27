@@ -16,5 +16,6 @@ fruits.forEach(function(item){
 
 // SEARCHING IN ARRAY
 
-console.log(fruits.indexOf("banana")) // 1 
+console.log(fruits.indexOf("banana")) // 0  
 console.log(fruits.includes("graps")) // false
+
