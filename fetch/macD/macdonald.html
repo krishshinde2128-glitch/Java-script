@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's - Lovin' It Delivered</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="macdonald.css">
+    <script src="macdonald.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            M<span>c</span>Donald's
+        </div>
+        <div class="cart-btn-wrapper" onclick="toggleCart()">
+            <div class="cart-btn">
+                🛒 Cart
+            </div>
+            <div class="cart-count" id="cart-count">0</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Lovin' It Delivered</h1>
+        <p>Order your favorites freshly prepared.</p>
+    </section>
+
+    <!-- Menu Area -->
+    <main class="menu-container" id="menu-area">
+        <!-- JS will inject loader or items here -->
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2>Your Order</h2>
+                <button class="close-cart" onclick="toggleCart()">✕</button>
+            </div>
+
+            <div class="cart-items" id="cart-items-container">
+                <div class="cart-empty-state">
+                    <p>Your cart is empty 🍔</p>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <div class="total-row">
+                    <span>Total</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <!-- Wrapper for visual feedback relative to this area -->
+                <div style="position: relative; overflow: hidden; border-radius: 12px;">
+                    <button class="checkout-btn" id="checkout-btn" onclick="initiateCheckout()" disabled>
+                        Proceed to Pay
+                    </button>
+                    <!-- Processing Overlay inside the button/footer area for effect -->
+                    <div class="processing-overlay" id="processing-view">
+                        <div class="spinner" style="width: 30px; height: 30px; border-width: 3px;"></div>
+                        <span class="payment-status" id="payment-text">Processing...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="checkmark">✓</span>
+        <span id="toast-message">Added to cart!</span>
+    </div>
+
+    <script src="mcdonalds.js"></script>
+</body>
+</html>
