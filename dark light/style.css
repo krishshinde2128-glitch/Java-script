@@ -1,0 +1,8 @@
+    body.light {
+    background:linear-gradient(135deg, #cccdd2 0%, #e5d1f9 100%);
+    color: #000000;
+    }
+    body.dark {
+   background:linear-gradient(135deg, #313131 0%, #0f24a9 100%);
+    color: #f0f0f0;
+    }       

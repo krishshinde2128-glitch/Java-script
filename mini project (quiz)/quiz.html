@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Quiz Pro</title>
+    <title>B.Tech Quiz Master</title>
     <link rel="stylesheet" href="quiz.css">
-    <script src="quiz.js" defer></script>
 </head>
 <body>
 
@@ -15,17 +14,15 @@
         <div id="quiz-box">
             <h2 id="question-text">Question goes here...</h2>
             <div id="option-buttons" class="btn-grid">
-                </div>
+                <button id="btn0" class="ans-btn"></button>
+                <button id="btn1" class="ans-btn"></button>
+                <button id="btn2" class="ans-btn"></button>
+                <button id="btn3" class="ans-btn"></button>
+            </div>
             <button id="next-btn" class="hide">Next Question</button>
-        </div>
-        
-        <div id="result-box" class="hide">
-            <h2>Quiz Completed!</h2>
-            <p id="score-text"></p>
-            <button onclick="location.reload()">Restart Quiz</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
